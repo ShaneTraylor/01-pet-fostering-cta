@@ -1,0 +1,106 @@
+/* Use a modern, easy-to-read font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light teal background */
+}
+
+/* Style the CTA banner with a background image and overlay color */
+.cta-banner {
+  background: #6ed6e9 url('img/cta-bg.jpg') center/cover no-repeat; /* blue-teal overlay and image */
+  background-blend-mode: overlay; /* blend overlay color with image */
+  color: #fff; /* white text for contrast */
+  text-align: center; /* center all text and content */
+  padding: 40px 16px; /* space above and below content */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25); /* add shadow for better legibility */
+}
+
+/* Navy blue color for CTA heading and description */
+.cta-heading,
+.cta-desc {
+  color: #15395b; /* navy blue */
+  text-shadow: none; /* remove shadow for these elements */
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  display: inline-block; /* allows padding and margin */
+  background-color: #2ee6d6; /* bright teal button */
+  color: #1a3a4a; /* dark text for contrast */
+  padding: 16px 36px; /* space inside the button */
+  font-size: 1.1em; /* slightly larger text */
+  text-decoration: none; /* remove underline */
+  border-radius: 6px; /* rounded corners */
+  font-weight: bold; /* bold text */
+  border: none; /* no border */
+  box-shadow: 0 2px 8px rgba(34, 90, 120, 0.15); /* subtle shadow */
+  transition: background-color 0.2s; /* smooth color change on hover */
+  margin-top: 16px; /* space above the button */
+}
+
+/* Button hover effect for interactivity */
+.cta-button:hover {
+  background-color: #1ad1c1; /* slightly darker teal on hover */
+  color: #17404b; /* darker text on hover */
+}
+
+/* Simple site header at the top of the page */
+.site-header {
+  background-color: #1a7e99; /* darker blue-teal */
+  color: #ffffff; /* white text */
+  text-align: center; /* center the site name */
+  padding: 8px 0; /* small vertical padding */
+}
+
+/* Style for the site name in the header */
+.site-header h2 {
+  margin: 0; /* remove default margin */
+  font-size: 2em; /* larger text */
+  letter-spacing: 2px; /* space out the letters */
+  font-family: 'Segoe UI', Arial, sans-serif; /* match body font */
+}
+
+/* Info section with two columns: image and text */
+.info-section {
+  max-width: 800px; /* limit width for readability */
+  margin: 40px auto 0 auto; /* center on page with space above */
+  text-align: center; /* center content by default */
+}
+
+/* Make columns appear side by side on larger screens */
+.info-image, .info-text {
+  display: inline-block; /* place next to each other */
+  vertical-align: top; /* align to the top */
+  width: 48%; /* each takes about half the space */
+  box-sizing: border-box; /* include padding in width */
+}
+
+/* Style the image in the info section */
+.info-image {
+  width: 320px; /* fixed width for the image */
+  max-width: 100%; /* don't overflow container */
+  height: auto; /* keep aspect ratio */
+  border-radius: 8px; /* rounded corners */
+  margin-bottom: 16px; /* space below image */
+}
+
+/* Style the text column in the info section */
+.info-text {
+  padding: 0 16px; /* space on left and right */
+  text-align: left; /* align text to the left */
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 600px) {
+  .info-image, .info-text {
+    display: block; /* stack vertically */
+    width: 100%; /* take full width */
+    text-align: center; /* center image and text */
+    padding: 0; /* remove side padding */
+  }
+  .info-text {
+    text-align: left; /* left-align text for readability */
+    margin-top: 20px; /* space above text */
+  }
+}
